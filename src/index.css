@@ -163,6 +163,14 @@
 .prose strong { @apply font-semibold text-gray-800; }
 .prose em { @apply italic; }
 
+/* Center every heading inside module learning content and override editor alignment */
+.module-headings-center h1,
+.module-headings-center h2,
+.module-headings-center h3,
+.module-headings-center h4 {
+  text-align: center !important;
+}
+
 /* Pretest slider transitions */
 @keyframes slideInRight {
   from { transform: translateX(40px); opacity: 0; }

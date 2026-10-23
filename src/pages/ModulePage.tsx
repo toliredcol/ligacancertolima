@@ -218,7 +218,7 @@ export default function ModulePage() {
               <UvIndexWidget />
             </div>
           )}
-          <div className="space-y-6">
+          <div className="module-headings-center space-y-6">
             {contentBlocks.map(block => (
               <div key={block.id} id={`block-${block.id}`}>
                 <ContentBlockRenderer block={block} accentColor={accentColor} />
@@ -237,7 +237,7 @@ export default function ModulePage() {
                 />
                 <p className="text-sm font-semibold text-gray-600 leading-snug">¡Mira estas imágenes!</p>
               </div>
-              <div className="mt-3">
+              <div className="module-headings-center mt-3">
                 <ContentBlockRenderer block={galleryBlock} accentColor={accentColor} />
               </div>
             </>
