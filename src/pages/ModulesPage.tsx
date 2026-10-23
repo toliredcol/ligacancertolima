@@ -24,12 +24,12 @@ export default function ModulesPage() {
           Al finalizar cada módulo, podrás obtener tu diploma.
         </p>
         {loading ? (
-          <div className="grid grid-cols-2 gap-3">
-            {[...Array(6)].map((_, i) => <div key={i} className="skeleton h-36 rounded-2xl" />)}
+          <div className="grid grid-cols-1 gap-3">
+            {[...Array(6)].map((_, i) => <div key={i} className="skeleton h-24 rounded-2xl" />)}
           </div>
         ) : (
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
-            {modules.map(mod => <ModuleCard key={mod.id} module={mod} />)}
+          <div className="grid grid-cols-1 gap-3">
+            {modules.map(mod => <ModuleCard key={mod.id} module={mod} variant="list" />)}
           </div>
         )}
       </div>
