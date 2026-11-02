@@ -50,6 +50,12 @@ export default function ModulePage() {
   const [activeSection, setActiveSection] = useState<'content' | 'videos' | 'docs' | 'test'>('content');
 
   useEffect(() => {
+    if (mod?.title) {
+      document.title = mod.title;
+    }
+  }, [mod?.title]);
+
+  useEffect(() => {
     if (!slug) return;
     const load = async () => {
       const { data: modData } = await supabase.from('modules').select('*').eq('slug', slug).maybeSingle();
