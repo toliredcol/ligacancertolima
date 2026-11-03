@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, NavLink, useNavigate } from 'react-router-dom';
 import {
   Image, BookOpen, FileQuestion,
-  MessageCircle, Award, LogOut, Menu, X, BarChart3, Users, ImageIcon, Images, FileText, Shuffle
+  MessageCircle, Award, LogOut, Menu, X, BarChart3, Users, ImageIcon, Images, FileText, Shuffle, Smartphone
 } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { useAppConfig } from '../../lib/AppConfigContext';
@@ -21,6 +21,7 @@ import AdminPages from './sections/AdminPages';
 import AdminMatchingGame from './sections/AdminMatchingGame';
 import AdminWhatsAppConfig from './sections/AdminWhatsAppConfig';
 import AdminStories from './sections/AdminStories';
+import AdminPwaMenu from './sections/AdminPwaMenu';
 
 const navItems = [
   { to: '/admin/dashboard', label: 'Estadísticas', icon: BarChart3, exact: true },
@@ -36,6 +37,7 @@ const navItems = [
   { to: '/admin/dashboard/emparejar', label: 'Emparejar Conceptos', icon: Shuffle },
   { to: '/admin/dashboard/whatsapp', label: 'Botón de WhatsApp', icon: MessageCircle },
   { to: '/admin/dashboard/cuentos', label: 'El Rincón de los Cuentos', icon: BookOpen },
+  { to: '/admin/dashboard/menu-pwa', label: 'Menú de la app (PWA)', icon: Smartphone },
 ];
 
 export default function AdminDashboard() {
@@ -120,6 +122,7 @@ export default function AdminDashboard() {
             <Route path="emparejar" element={<AdminMatchingGame />} />
             <Route path="whatsapp" element={<AdminWhatsAppConfig />} />
             <Route path="cuentos" element={<AdminStories />} />
+            <Route path="menu-pwa" element={<AdminPwaMenu />} />
           </Routes>
         </main>
       </div>
