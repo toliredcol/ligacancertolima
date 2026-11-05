@@ -278,6 +278,6 @@ INSERT INTO diploma_config (title, congratulations_text, signer_name, signer_tit
 SELECT 'Certificado de Educación en Salud',
        'Ha completado exitosamente el módulo educativo sobre',
        'Equipo Liga Contra el Cáncer',
-       'Liga Colombiana Contra el Cáncer - Zonal Tolima',
+       'Liga Contra el Cáncer - Zonal Tolima',
        '#C41E3A'
 WHERE NOT EXISTS (SELECT 1 FROM diploma_config);

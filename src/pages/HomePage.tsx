@@ -270,7 +270,7 @@ export default function HomePage() {
             </div>
           </div>
           <p className="text-gray-500 text-xs text-center">
-            © {new Date().getFullYear()} Liga Colombiana Contra el Cáncer - Zonal Tolima.<br />
+            © {new Date().getFullYear()} Liga Contra el Cáncer - Zonal Tolima.<br />
             Aplicación educativa sin fines de lucro.
           </p>
         </div>

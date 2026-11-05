@@ -1,7 +1,7 @@
 {
-  "name": "Liga Colombiana Contra el Cáncer - Zonal Tolima",
-  "short_name": "Liga Cáncer Tolima",
-  "description": "Aplicación educativa sobre prevención y detección temprana del cáncer. Liga Colombiana Contra el Cáncer - Zonal Tolima.",
+  "name": "Liga Contra el Cáncer - Zonal Tolima",
+  "short_name": "Liga Contra el Cáncer",
+  "description": "Aplicación educativa sobre prevención y detección temprana del cáncer. Liga Contra el Cáncer - Zonal Tolima.",
   "lang": "es",
   "start_url": "/",
   "scope": "/",

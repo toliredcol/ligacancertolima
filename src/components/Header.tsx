@@ -34,7 +34,7 @@ export default function Header({ title, showBack = false, colorHex, onBack }: Pr
         <Link to="/" className="flex items-center justify-center">
           <img
             src={logoUrl}
-            alt="Liga Colombiana Contra el Cáncer - Zonal Tolima"
+            alt="Liga Contra el Cáncer - Zonal Tolima"
             className="w-auto object-contain"
             style={{
               height: 'clamp(56px, 10vw, 72px)',

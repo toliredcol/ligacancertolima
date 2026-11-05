@@ -71,7 +71,7 @@ export default function AdminDashboard() {
           <img src={logoUrl} alt="Logo" className="h-9 w-auto object-contain" />
           <div className="flex-1">
             <p className="font-bold text-white text-sm leading-tight">Panel Admin</p>
-            <p className="text-white/60 text-[10px]">Liga Contra el Cáncer - Tolima</p>
+            <p className="text-white/60 text-[10px]">Liga Contra el Cáncer - Zonal Tolima</p>
           </div>
           <button onClick={handleLogout} className="flex items-center gap-1.5 text-white/80 hover:text-white text-sm font-medium transition-colors">
             <LogOut size={16} />
